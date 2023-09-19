@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=egde"> 
+    <title>Reg Form</title>
+</head>
+<body>
+    <header>
+        <h2  style="text-align: center;">Registration Form</h2>
+    </header>
+    <main>
+        <form action="/action_page.php" autocomplete="on">
+            <table >
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" placeholder="your name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">email:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email" placeholder="your email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input  type="number" id="number" name="number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Gender">Gender:</label>
+                    </td>
+                    <td>
+                        <label for="Male">Male:</label>
+                        <input type="radio" id="Male" name="Gender" value="Male">
+                        <label for="Female">Female:</label>
+                        <input type="radio" id="Female" name="Gender" value="Female">
+                        <label for="Other">Other:</label>
+                        <input type="radio" id="Other" name="Gender" value="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lang">Language:</label>
+                    </td>
+                    <td>
+                        <select id="lang" name="lang">
+                            <option>Select Options</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="sql">sql</option>
+                            <option value="MP">Machine Learning with python</option>
+                            <option value="SJ">SpringBoot with Java</option>
+                            <option value="FSD">Full Stack Development</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="zipcode">Zip Code:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="zipcode" name="zipcode" size="6">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="about">About:</label>
+                    </td>
+                    <td>
+                        <textarea name="message" id="message" cols="25" rows="4" placeholder="Write about yourself..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                </tr>
+        </table>
+        </form>
+        <footer>
+            <a href="/index.html" style="text-decoration: none;">Back To Home Page</a>
+        </footer>
+    </main>
+</body>
+</html>
